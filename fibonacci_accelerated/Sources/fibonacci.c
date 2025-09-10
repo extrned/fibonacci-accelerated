@@ -33,8 +33,12 @@ U64 fibonacci (U64 N) {
 }
 int main() {
     U64 N;
+    clock_t cl = clock();
     puts("Enter some number: ");
     if (scanf("%llu", &N) != 1) return 1;
     printf("\nFibonacci number: %llu\n", fibonacci(N));
+    cl = clock() - cl;
+    double t_taken = ((double)cl) / CLOCKS_PER_SEC;
+    printf("It took %fs to execute.", t_taken);
     return 0;
 }
