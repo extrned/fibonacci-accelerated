@@ -42,7 +42,7 @@ int main() {
     clock_gettime(CLOCK_MONOTONIC, &end);
 
     double t_taken = (end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec) / 1e9;
-    printf("\nFibonacci number: %llu\n", result);
-    printf("It took %" PRIu64 "secs to execute.", t_taken);
+    printf("\nFibonacci number: %" PRIu64 "\n", result);
+    printf("It took %.9f secs to execute.", t_taken);
     return 0;
 }
