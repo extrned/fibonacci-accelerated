@@ -36,5 +36,5 @@ int main() {
     puts("Enter some number: ");
     if (scanf("%llu", &N) != 1) return 1;
     printf("\nFibonacci number: %llu\n", fibonacci(N));
-        return 0;
+    return 0;
 }
