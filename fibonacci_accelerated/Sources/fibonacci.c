@@ -43,6 +43,6 @@ int main() {
 
     double t_taken = (end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec) / 1e9;
     printf("\nFibonacci number: %llu\n", result);
-    printf("It took %.9f secs to execute.", t_taken);
+    printf("It took %" PRIu64 "secs to execute.", t_taken);
     return 0;
 }
