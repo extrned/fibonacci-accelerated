@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../fibonacci.h"
+#include "../Headers/fibonacci.h"
 
 static void mul_mat (const U64 a[2][2], const U64 b[2][2], U64 r[2][2]) {
     r[0][0] = a[0][0] * b[0][0] + a[0][1] * b[1][0];
